@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cedal Star — Apps • Security • Web</title>
+  <script>
+    (function () {
+      var theme = localStorage.getItem('cs-theme');
+      var lang = localStorage.getItem('cs-lang');
+      if (theme) document.documentElement.setAttribute('data-theme', theme);
+      if (lang) document.documentElement.setAttribute('lang', lang);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/cedal.css" />
+</head>
+<body>
+  <header class="cs-nav">
+    <div class="cs-nav-inner">
+      <a href="#top" class="cs-logo">
+  <img src="./assets/logo.png" alt="Cedal Star logo" class="cs-logo-img" />
+  <span class="cs-logo-text">Cedal Star</span>
+</a>
+
+      <nav class="cs-nav-links">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#products" data-i18n="nav_products">Apps</a>
+        <a href="#founder" data-i18n="nav_founder">Founder</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="cs-nav-controls">
+        <button type="button" id="cs-settings-toggle" class="cs-icon-btn" aria-label="Settings" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+        <button type="button" id="cs-hamburger" class="cs-icon-btn cs-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="cs-mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="cs-mobile-menu" class="cs-mobile-menu">
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#products" data-i18n="nav_products">Apps</a>
+      <a href="#founder" data-i18n="nav_founder">Founder</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+  </header>
+
+  <div id="cs-settings-overlay" class="cs-settings-overlay"></div>
+  <aside id="cs-settings-panel" class="cs-settings-panel" aria-hidden="true">
+    <div class="cs-settings-header">
+      <h2 class="cs-settings-title" data-i18n="settings_heading">Settings</h2>
+      <button type="button" id="cs-settings-close" class="cs-icon-btn" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cs-settings-block">
+      <span class="cs-settings-label" data-i18n="settings_theme_label">Color theme</span>
+      <div class="cs-theme-swatches">
+        <button type="button" class="cs-theme-swatch" data-theme-option="default">
+          <span class="cs-theme-swatch-dot cs-swatch-default"></span>Default
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="ocean">
+          <span class="cs-theme-swatch-dot cs-swatch-ocean"></span>Ocean
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="terminal">
+          <span class="cs-theme-swatch-dot cs-swatch-terminal"></span>Terminal
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="lava">
+          <span class="cs-theme-swatch-dot cs-swatch-lava"></span>Lava
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="aurora">
+          <span class="cs-theme-swatch-dot cs-swatch-aurora"></span>Aurora
+        </button>
+      </div>
+    </div>
+
+    <div class="cs-settings-block">
+      <label class="cs-settings-label" for="cs-lang-select" data-i18n="settings_lang_label">Language</label>
+      <select id="cs-lang-select" class="cs-lang-select">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="yo">Yorùbá</option>
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+  </aside>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="cs-hero">
+      <div class="cs-hero-inner">
+        <p class="cs-eyebrow" data-i18n="hero_eyebrow">CYBER • ANDROID • WEB</p>
+        <h1 class="cs-hero-title" data-i18n-html="hero_title">
+          We build apps,<br />
+          secure systems,<br />
+          and decode problems.
+        </h1>
+        <p class="cs-hero-sub" data-i18n="hero_sub">
+          Cedal Star is a small studio working on Android apps, security tools, and custom websites.
+          We don't have a physical office — we exist online and work from anywhere.
+          If you need something built or locked down, talk to us.
+        </p>
+
+        <div class="cs-hero-actions">
+          <a href="#contact" class="cs-btn cs-btn-primary cs-btn-pulse" data-i18n="hero_cta_primary">Contact Cedal Star</a>
+          <a href="#products" class="cs-btn cs-btn-ghost" data-i18n="hero_cta_ghost">View Apps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="cs-section" id="services">
+      <div class="cs-section-inner">
+        <h2 class="cs-section-title" data-i18n="services_title">What Cedal Star does</h2>
+        <p class="cs-section-sub" data-i18n="services_sub">
+          We keep it focused: Android, security, and the web. No fluff.
+        </p>
+
+        <div class="cs-grid cs-grid-3">
+          <article class="cs-card cs-reveal">
+            <h3 class="cs-card-title" data-i18n="service1_title">App Creation</h3>
+            <p class="cs-card-body" data-i18n="service1_body">
+              Custom Android apps and tools, from launchers to utilities.
+              We build from scratch for your idea or improve what you already have.
+            </p>
+          </article>
+
+          <article class="cs-card cs-reveal">
+            <h3 class="cs-card-title" data-i18n="service2_title">Security & “Hacking”</h3>
+            <p class="cs-card-body" data-i18n="service2_body">
+              Security-focused features, app-lock systems, and basic testing.
+              We think like attackers so we can design better defenses.
+            </p>
+          </article>
+
+          <article class="cs-card cs-reveal">
+            <h3 class="cs-card-title" data-i18n="service3_title">Websites & Dashboards</h3>
+            <p class="cs-card-body" data-i18n="service3_body">
+              Simple, fast sites and admin panels for apps or brands.
+              From landing pages to small dashboards connected to your backend.
+            </p>
+          </article>
+
+          <article class="cs-card cs-reveal">
+            <h3 class="cs-card-title" data-i18n="service4_title">AI & Automation</h3>
+            <p class="cs-card-body" data-i18n="service4_body">
+              Voice assistants, simple bots, and automations around your app or site.
+              We integrate existing AI services into your stack.
+            </p>
+          </article>
+
+          <article class="cs-card cs-reveal">
+            <h3 class="cs-card-title" data-i18n="service5_title">Debugging & Decoding</h3>
+            <p class="cs-card-body" data-i18n="service5_body">
+              Fixing broken flows, tracking weird bugs, reading and explaining logs or code.
+              If it's confusing, we help decode it.
+            </p>
+          </article>
+
+          <article class="cs-card cs-reveal">
+            <h3 class="cs-card-title" data-i18n="service6_title">Consult & Support</h3>
+            <p class="cs-card-body" data-i18n="service6_body">
+              Need advice on how to build your idea, what stack to pick, or how to secure it?
+              Cedal Star can guide and then build.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS / DOWNLOADS -->
+    <section class="cs-section cs-section-alt" id="products">
+      <div class="cs-section-inner">
+        <h2 class="cs-section-title" data-i18n="products_title">Apps & Tools</h2>
+        <p class="cs-section-sub" data-i18n="products_sub">
+          Some projects are public, some are private. Here are the ones we can show now.
+        </p>
+
+        <div class="cs-grid cs-grid-2">
+          <article class="cs-product cs-reveal">
+            <h3 class="cs-product-name" data-i18n="product_scifi_name">SciFiLauncher</h3>
+            <p class="cs-product-body" data-i18n="product_scifi_body">
+              Android launcher with a cyber interface, AI assistant, and security features.
+              Built for power users who want more than stock.
+            </p>
+            <div class="cs-product-meta">
+              <span data-i18n="product_scifi_tag1">Android</span>
+              <span data-i18n="product_scifi_tag2">Launcher</span>
+            </div>
+            <div class="cs-product-actions">
+              <!-- Replace # with Play Store / GitHub / APK link when ready -->
+              <a href="#" class="cs-btn cs-btn-small cs-btn-disabled" data-i18n="product_scifi_btn">Download (coming soon)</a>
+            </div>
+          </article>
+
+          <article class="cs-product cs-reveal">
+            <h3 class="cs-product-name" data-i18n="product_cedallauncher_name">Cedal Launcher</h3>
+            <p class="cs-product-body" data-i18n="product_cedallauncher_body">
+              A fast, clean launcher built before SciFiLauncher.
+              Lightweight, customizable, and focused on speed.
+            </p>
+            <div class="cs-product-meta">
+              <span data-i18n="product_cedallauncher_tag1">Android</span>
+              <span data-i18n="product_cedallauncher_tag2">Launcher</span>
+            </div>
+            <div class="cs-product-actions">
+              <a href="#" class="cs-btn cs-btn-small cs-btn-disabled" data-i18n="product_cedallauncher_btn">Download (coming soon)</a>
+            </div>
+          </article>
+
+          <article class="cs-product cs-reveal">
+            <h3 class="cs-product-name" data-i18n="product_elene_name">Elene Assistant</h3>
+            <p class="cs-product-body" data-i18n="product_elene_body">
+              Voice assistant integrated into launchers.
+              Wake-word, text‑to‑speech, and responses tuned for your device.
+            </p>
+            <div class="cs-product-meta">
+              <span data-i18n="product_elene_tag1">AI</span>
+              <span data-i18n="product_elene_tag2">Assistant</span>
+            </div>
+            <div class="cs-product-actions">
+              <a href="#" class="cs-btn cs-btn-small cs-btn-disabled" data-i18n="product_elene_btn">More info soon</a>
+            </div>
+          </article>
+
+          <article class="cs-product cs-reveal">
+            <h3 class="cs-product-name" data-i18n="product_search_name">Cedal Search AI</h3>
+            <p class="cs-product-body" data-i18n="product_search_body">
+              AI-powered search built by Cedal Star, with voice and accessibility support
+              across the full search experience, not just the input box.
+            </p>
+            <div class="cs-product-meta">
+              <span data-i18n="product_search_tag1">AI</span>
+              <span data-i18n="product_search_tag2">Search</span>
+            </div>
+            <div class="cs-product-actions">
+              <a href="#" class="cs-btn cs-btn-small cs-btn-disabled" data-i18n="product_search_btn">More info soon</a>
+            </div>
+          </article>
+
+          <article class="cs-product cs-reveal">
+            <h3 class="cs-product-name" data-i18n="product_cedalapp_name">Cedal App</h3>
+            <p class="cs-product-body" data-i18n="product_cedalapp_body">
+              The core Cedal Star app: an AI assistant built into an Android + backend platform.
+              Still in active development.
+            </p>
+            <div class="cs-product-meta">
+              <span data-i18n="product_cedalapp_tag1">Android</span>
+              <span data-i18n="product_cedalapp_tag2">AI</span>
+            </div>
+            <div class="cs-product-actions">
+              <a href="#" class="cs-btn cs-btn-small cs-btn-disabled" data-i18n="product_cedalapp_btn">In development</a>
+            </div>
+          </article>
+
+          <article class="cs-product cs-reveal">
+            <h3 class="cs-product-name" data-i18n="product_voiceos_name">VoiceOS</h3>
+            <p class="cs-product-body" data-i18n="product_voiceos_body">
+              A voice-controlled AI agent for Windows. Hands-free desktop control,
+              built on top of screen-aware AI.
+            </p>
+            <div class="cs-product-meta">
+              <span data-i18n="product_voiceos_tag1">Desktop</span>
+              <span data-i18n="product_voiceos_tag2">AI</span>
+            </div>
+            <div class="cs-product-actions">
+              <a href="#" class="cs-btn cs-btn-small cs-btn-disabled" data-i18n="product_voiceos_btn">More info soon</a>
+            </div>
+          </article>
+
+          <article class="cs-product cs-reveal">
+            <h3 class="cs-product-name" data-i18n="product_miv_name">MIV Church Website</h3>
+            <p class="cs-product-body" data-i18n="product_miv_body">
+              A full website built by Cedal Star for a client — Men of Issachar Vision,
+              a church in Edinburgh. Not our own product, but our craft.
+            </p>
+            <div class="cs-product-meta">
+              <span data-i18n="product_miv_tag1">Client Work</span>
+              <span data-i18n="product_miv_tag2">Web</span>
+            </div>
+            <div class="cs-product-actions">
+              <a href="https://mivedinburgh.org" target="_blank" rel="noopener noreferrer" class="cs-btn cs-btn-small cs-btn-ghost" data-i18n="product_miv_btn">Visit site</a>
+            </div>
+          </article>
+
+          <article class="cs-product cs-product-empty cs-reveal">
+            <h3 class="cs-product-name" data-i18n="product_empty_name">Your app here</h3>
+            <p class="cs-product-body" data-i18n="product_empty_body">
+              Want Cedal Star to build or secure your app?
+              Reach out and we'll see if it fits our lab.
+            </p>
+            <div class="cs-product-actions">
+              <a href="#contact" class="cs-btn cs-btn-small cs-btn-primary" data-i18n="product_empty_btn">Contact us</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="cs-section" id="founder">
+      <div class="cs-section-inner cs-founder">
+        <h2 class="cs-section-title" data-i18n="founder_title">Founder</h2>
+        <p class="cs-section-sub" data-i18n="founder_sub">
+          Cedal Star was started by Xenos — a developer focused on Android, security, and experimental interfaces.
+        </p>
+
+        <div class="cs-founder-card cs-reveal">
+          <img src="./assets/xenos.jpeg" alt="Xenos portrait" class="cs-founder-img" />
+          <div class="cs-founder-info">
+            <h3 class="cs-founder-name">Xenos</h3>
+            <p class="cs-founder-role" data-i18n="founder_role">Founder • Android & Security Developer</p>
+            <p class="cs-founder-text" data-i18n="founder_text">
+              Building custom launchers, AI assistants, and security-focused tools.
+              Leading Cedal Star as a small, remote-first studio with a focus on sharp, efficient builds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="cs-section" id="contact">
+      <div class="cs-section-inner cs-contact">
+        <h2 class="cs-section-title" data-i18n="contact_title">Contact Cedal Star</h2>
+        <p class="cs-section-sub" data-i18n="contact_sub">
+          Tell us what you need: app, website, security feature, or something else.
+        </p>
+
+        <div class="cs-contact-grid">
+          <div class="cs-reveal">
+            <h3 class="cs-contact-heading" data-i18n="contact_email_heading">Email</h3>
+            <p class="cs-contact-text" data-i18n="contact_email_text">
+              For all projects, ideas, or questions:
+            </p>
+            <p class="cs-contact-link">
+              <a href="mailto:creator@cedalstar.org">creator@cedalstar.org</a>
+            </p>
+          </div>
+
+          <div class="cs-reveal">
+            <h3 class="cs-contact-heading" data-i18n="contact_github_heading">GitHub</h3>
+            <p class="cs-contact-text" data-i18n="contact_github_text">
+              Code, experiments, and some public tools live here.
+            </p>
+            <p class="cs-contact-link">
+              <a href="https://github.com/cedalstar" target="_blank" rel="noopener noreferrer">github.com/cedalstar</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Optional form (commented out) -->
+        <!--
+        <form class="cs-contact-form">
+          <div class="cs-field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" />
+          </div>
+          <div class="cs-field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" />
+          </div>
+          <div class="cs-field">
+            <label for="message">What do you need?</label>
+            <textarea id="message" rows="4" placeholder="Short description of your idea or problem"></textarea>
+          </div>
+          <button type="submit" class="cs-btn cs-btn-primary">Send request</button>
+        </form>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="cs-footer">
+    <div class="cs-footer-inner">
+      <span>© <span id="cs-year"></span> Cedal Star</span>
+      <span data-i18n="footer_built">Built by the Cedal Star team</span>
+    </div>
+  </footer>
+
+  <script src="./js/translations.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
