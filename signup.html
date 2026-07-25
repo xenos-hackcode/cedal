@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up — Cedal Star</title>
+  <script>
+    (function () {
+      var theme = localStorage.getItem('cs-theme');
+      var lang = localStorage.getItem('cs-lang');
+      if (theme) document.documentElement.setAttribute('data-theme', theme);
+      if (lang) document.documentElement.setAttribute('lang', lang);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/cedal.css" />
+</head>
+<body>
+  <header class="cs-nav">
+    <div class="cs-nav-inner">
+      <a href="./index.html#top" class="cs-logo">
+  <img src="./assets/logo.png" alt="Cedal Star logo" class="cs-logo-img" />
+  <span class="cs-logo-text">Cedal Star</span>
+</a>
+
+      <nav class="cs-nav-links">
+        <a href="./index.html#services" data-i18n="nav_services">Services</a>
+        <a href="./index.html#products" data-i18n="nav_products">Apps</a>
+        <a href="./careers.html" data-i18n="nav_careers">Careers</a>
+        <a href="./index.html#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="cs-nav-controls">
+        <div class="cs-nav-auth"></div>
+        <button type="button" id="cs-settings-toggle" class="cs-icon-btn" aria-label="Settings" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+        <button type="button" id="cs-hamburger" class="cs-icon-btn cs-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="cs-mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="cs-mobile-menu" class="cs-mobile-menu">
+      <a href="./index.html#services" data-i18n="nav_services">Services</a>
+      <a href="./index.html#products" data-i18n="nav_products">Apps</a>
+      <a href="./careers.html" data-i18n="nav_careers">Careers</a>
+      <a href="./index.html#contact" data-i18n="nav_contact">Contact</a>
+      <div class="cs-nav-auth"></div>
+    </nav>
+  </header>
+
+  <div id="cs-settings-overlay" class="cs-settings-overlay"></div>
+  <aside id="cs-settings-panel" class="cs-settings-panel" aria-hidden="true">
+    <div class="cs-settings-header">
+      <h2 class="cs-settings-title" data-i18n="settings_heading">Settings</h2>
+      <button type="button" id="cs-settings-close" class="cs-icon-btn" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cs-settings-block">
+      <span class="cs-settings-label" data-i18n="settings_theme_label">Color theme</span>
+      <div class="cs-theme-swatches">
+        <button type="button" class="cs-theme-swatch" data-theme-option="default">
+          <span class="cs-theme-swatch-dot cs-swatch-default"></span>Default
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="ocean">
+          <span class="cs-theme-swatch-dot cs-swatch-ocean"></span>Ocean
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="terminal">
+          <span class="cs-theme-swatch-dot cs-swatch-terminal"></span>Terminal
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="lava">
+          <span class="cs-theme-swatch-dot cs-swatch-lava"></span>Lava
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="aurora">
+          <span class="cs-theme-swatch-dot cs-swatch-aurora"></span>Aurora
+        </button>
+      </div>
+    </div>
+
+    <div class="cs-settings-block">
+      <label class="cs-settings-label" for="cs-lang-select" data-i18n="settings_lang_label">Language</label>
+      <select id="cs-lang-select" class="cs-lang-select">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="yo">Yorùbá</option>
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="cs-auth-section">
+      <div class="cs-auth-card cs-reveal">
+        <h1 class="cs-section-title" data-i18n="signup_title">Create your account</h1>
+        <p class="cs-section-sub" data-i18n="signup_sub">Sign up to apply for open positions at Cedal Star.</p>
+
+        <div id="cs-signup-message" class="cs-form-error"></div>
+
+        <form id="cs-signup-form" class="cs-form">
+          <div class="cs-field">
+            <label for="signup-name" data-i18n="signup_name_label">Full name</label>
+            <input id="signup-name" type="text" required autocomplete="name" />
+          </div>
+          <div class="cs-field">
+            <label for="signup-email" data-i18n="signup_email_label">Email</label>
+            <input id="signup-email" type="email" required autocomplete="email" />
+          </div>
+          <div class="cs-field">
+            <label for="signup-password" data-i18n="signup_password_label">Password</label>
+            <input id="signup-password" type="password" required minlength="6" autocomplete="new-password" />
+          </div>
+          <div class="cs-field">
+            <label for="signup-confirm" data-i18n="signup_confirm_label">Confirm password</label>
+            <input id="signup-confirm" type="password" required minlength="6" autocomplete="new-password" />
+          </div>
+          <button type="submit" class="cs-btn cs-btn-primary" data-i18n="signup_submit">Sign Up</button>
+        </form>
+
+        <p class="cs-form-foot">
+          <span data-i18n="signup_have_account">Already have an account?</span>
+          <a href="./login.html" data-i18n="signup_login_link">Sign in</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cs-footer">
+    <div class="cs-footer-inner">
+      <span>© <span id="cs-year"></span> Cedal Star</span>
+      <span data-i18n="footer_built">Built by the Cedal Star team</span>
+    </div>
+  </footer>
+
+  <script src="./js/translations.js"></script>
+  <script src="./js/firebase-config.js"></script>
+  <script src="./js/main.js"></script>
+  <script type="module" src="./js/firebase-init.js"></script>
+  <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

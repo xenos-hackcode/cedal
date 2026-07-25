@@ -31,6 +31,11 @@
       }
     });
 
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+    });
+
     root.setAttribute('lang', lang);
     localStorage.setItem('cs-lang', lang);
 

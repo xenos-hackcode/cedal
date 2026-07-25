@@ -866,9 +866,10 @@ a {
   border-bottom-color: var(--cs-accent);
 }
 
-/* FORM (if enabled later) */
+/* FORM */
 
-.cs-contact-form {
+.cs-contact-form,
+.cs-form {
   margin-top: var(--cs-space-4);
   max-width: 32rem;
   display: grid;
@@ -899,6 +900,174 @@ a {
   outline: none;
   border-color: var(--cs-primary-strong);
   box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.5);
+}
+
+.cs-field-hint {
+  margin: 0.3rem 0 0;
+  font-size: 0.78rem;
+  color: var(--cs-text-faint);
+}
+
+/* AUTH PAGES */
+
+.cs-auth-section {
+  padding: var(--cs-space-16) var(--cs-space-4) var(--cs-space-16);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.cs-auth-card {
+  max-width: 26rem;
+  margin: 0 auto;
+  width: 100%;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.85));
+  border-radius: var(--cs-radius-lg);
+  padding: var(--cs-space-8) var(--cs-space-6);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: var(--cs-shadow-soft);
+}
+
+.cs-auth-card .cs-form {
+  margin-top: var(--cs-space-6);
+}
+
+.cs-form-foot {
+  margin-top: var(--cs-space-5);
+  font-size: 0.88rem;
+  color: var(--cs-text-muted);
+  text-align: center;
+}
+
+.cs-form-foot a {
+  color: var(--cs-primary-strong);
+  border-bottom: 1px solid rgba(129, 140, 248, 0.7);
+}
+
+.cs-form-link {
+  font-size: 0.85rem;
+  color: var(--cs-text-muted);
+  text-align: right;
+}
+
+.cs-form-link a {
+  color: var(--cs-primary-strong);
+}
+
+.cs-form-error {
+  display: none;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--cs-radius-md);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  background: rgba(239, 68, 68, 0.1);
+  color: #fca5a5;
+  font-size: 0.85rem;
+}
+
+.cs-form-error.cs-visible-block {
+  display: block;
+}
+
+.cs-form-success {
+  display: none;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--cs-radius-md);
+  border: 1px solid rgba(34, 197, 94, 0.5);
+  background: rgba(34, 197, 94, 0.1);
+  color: #86efac;
+  font-size: 0.85rem;
+}
+
+.cs-form-success.cs-visible-block {
+  display: block;
+}
+
+/* NAV AUTH CONTROL */
+
+.cs-nav-auth {
+  display: flex;
+  align-items: center;
+  gap: var(--cs-space-2);
+}
+
+.cs-nav-auth-name {
+  font-family: var(--cs-font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--cs-text-muted);
+  max-width: 8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* MODAL (application form) */
+
+.cs-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 60;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--cs-space-4);
+  overflow-y: auto;
+}
+
+.cs-modal-overlay.cs-open {
+  display: flex;
+}
+
+.cs-modal {
+  width: 100%;
+  max-width: 32rem;
+  background: var(--cs-surface);
+  border-radius: var(--cs-radius-lg);
+  border: 1px solid var(--cs-border);
+  box-shadow: var(--cs-shadow-soft);
+  padding: var(--cs-space-6);
+  margin: auto;
+}
+
+.cs-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--cs-space-4);
+  margin-bottom: var(--cs-space-2);
+}
+
+.cs-modal-title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.cs-modal-subtitle {
+  margin: 0 0 var(--cs-space-4);
+  color: var(--cs-text-muted);
+  font-size: 0.88rem;
+}
+
+.cs-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--cs-space-3);
+  margin-top: var(--cs-space-4);
+}
+
+/* CAREERS */
+
+.cs-position-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--cs-space-3);
+  flex-wrap: wrap;
+}
+
+.cs-position-signin-note {
+  font-size: 0.76rem;
+  color: var(--cs-text-faint);
 }
 
 /* FOOTER */
@@ -949,5 +1118,30 @@ a {
   .cs-founder-card {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .cs-auth-card {
+    padding: var(--cs-space-6) var(--cs-space-4);
+  }
+
+  .cs-modal {
+    padding: var(--cs-space-5) var(--cs-space-4);
+  }
+
+  .cs-nav-controls .cs-nav-auth {
+    display: none;
+  }
+
+  .cs-mobile-menu .cs-nav-auth {
+    display: flex;
+    margin-top: var(--cs-space-2);
+    padding-top: var(--cs-space-2);
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
+  }
+}
+
+@media (min-width: 641px) {
+  .cs-mobile-menu .cs-nav-auth {
+    display: none;
   }
 }

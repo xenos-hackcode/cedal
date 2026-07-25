@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers — Cedal Star</title>
+  <script>
+    (function () {
+      var theme = localStorage.getItem('cs-theme');
+      var lang = localStorage.getItem('cs-lang');
+      if (theme) document.documentElement.setAttribute('data-theme', theme);
+      if (lang) document.documentElement.setAttribute('lang', lang);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/cedal.css" />
+</head>
+<body>
+  <header class="cs-nav">
+    <div class="cs-nav-inner">
+      <a href="./index.html#top" class="cs-logo">
+  <img src="./assets/logo.png" alt="Cedal Star logo" class="cs-logo-img" />
+  <span class="cs-logo-text">Cedal Star</span>
+</a>
+
+      <nav class="cs-nav-links">
+        <a href="./index.html#services" data-i18n="nav_services">Services</a>
+        <a href="./index.html#products" data-i18n="nav_products">Apps</a>
+        <a href="./careers.html" class="cs-nav-active" data-i18n="nav_careers">Careers</a>
+        <a href="./index.html#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="cs-nav-controls">
+        <div class="cs-nav-auth"></div>
+        <button type="button" id="cs-settings-toggle" class="cs-icon-btn" aria-label="Settings" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+        <button type="button" id="cs-hamburger" class="cs-icon-btn cs-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="cs-mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="cs-mobile-menu" class="cs-mobile-menu">
+      <a href="./index.html#services" data-i18n="nav_services">Services</a>
+      <a href="./index.html#products" data-i18n="nav_products">Apps</a>
+      <a href="./careers.html" data-i18n="nav_careers">Careers</a>
+      <a href="./index.html#contact" data-i18n="nav_contact">Contact</a>
+      <div class="cs-nav-auth"></div>
+    </nav>
+  </header>
+
+  <div id="cs-settings-overlay" class="cs-settings-overlay"></div>
+  <aside id="cs-settings-panel" class="cs-settings-panel" aria-hidden="true">
+    <div class="cs-settings-header">
+      <h2 class="cs-settings-title" data-i18n="settings_heading">Settings</h2>
+      <button type="button" id="cs-settings-close" class="cs-icon-btn" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cs-settings-block">
+      <span class="cs-settings-label" data-i18n="settings_theme_label">Color theme</span>
+      <div class="cs-theme-swatches">
+        <button type="button" class="cs-theme-swatch" data-theme-option="default">
+          <span class="cs-theme-swatch-dot cs-swatch-default"></span>Default
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="ocean">
+          <span class="cs-theme-swatch-dot cs-swatch-ocean"></span>Ocean
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="terminal">
+          <span class="cs-theme-swatch-dot cs-swatch-terminal"></span>Terminal
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="lava">
+          <span class="cs-theme-swatch-dot cs-swatch-lava"></span>Lava
+        </button>
+        <button type="button" class="cs-theme-swatch" data-theme-option="aurora">
+          <span class="cs-theme-swatch-dot cs-swatch-aurora"></span>Aurora
+        </button>
+      </div>
+    </div>
+
+    <div class="cs-settings-block">
+      <label class="cs-settings-label" for="cs-lang-select" data-i18n="settings_lang_label">Language</label>
+      <select id="cs-lang-select" class="cs-lang-select">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="yo">Yorùbá</option>
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+  </aside>
+
+  <main id="top">
+    <section class="cs-section" style="padding-top: var(--cs-space-16);">
+      <div class="cs-section-inner">
+        <h1 class="cs-section-title" data-i18n="careers_title">Careers at Cedal Star</h1>
+        <p class="cs-section-sub" data-i18n="careers_sub">
+          We're a small, remote-first team. Here's what we're hiring for right now.
+        </p>
+
+        <div class="cs-grid cs-grid-2" id="cs-positions-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cs-footer">
+    <div class="cs-footer-inner">
+      <span>© <span id="cs-year"></span> Cedal Star</span>
+      <span data-i18n="footer_built">Built by the Cedal Star team</span>
+    </div>
+  </footer>
+
+  <div id="cs-apply-overlay" class="cs-modal-overlay">
+    <div class="cs-modal">
+      <div class="cs-modal-header">
+        <div>
+          <h2 class="cs-modal-title" data-i18n="apply_modal_heading">Job Application</h2>
+          <p class="cs-modal-subtitle" id="cs-apply-position-name"></p>
+        </div>
+        <button type="button" id="cs-apply-close" class="cs-icon-btn" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div id="cs-apply-message" class="cs-form-error"></div>
+
+      <form id="cs-apply-form" class="cs-form">
+        <div class="cs-field">
+          <label for="apply-experience" data-i18n="apply_experience_label">Relevant experience</label>
+          <textarea id="apply-experience" rows="3" required data-i18n-placeholder="apply_experience_placeholder" placeholder="Tell us about relevant experience or skills for this role."></textarea>
+        </div>
+        <div class="cs-field">
+          <label for="apply-whyfit" data-i18n="apply_whyfit_label">Why are you a fit?</label>
+          <textarea id="apply-whyfit" rows="3" required data-i18n-placeholder="apply_whyfit_placeholder" placeholder="A few sentences on why you'd be good for this role."></textarea>
+        </div>
+        <div class="cs-field">
+          <label for="apply-portfolio" data-i18n="apply_portfolio_label">Portfolio / GitHub / LinkedIn (optional)</label>
+          <input id="apply-portfolio" type="url" />
+        </div>
+        <div class="cs-modal-actions">
+          <button type="submit" class="cs-btn cs-btn-primary" data-i18n="apply_submit_btn">Submit Application</button>
+          <button type="button" id="cs-apply-cancel" class="cs-btn cs-btn-ghost" data-i18n="apply_cancel_btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/translations.js"></script>
+  <script src="./js/firebase-config.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    if (window.emailjs && window.CS_EMAILJS_CONFIG && window.CS_EMAILJS_CONFIG.publicKey !== 'REPLACE_ME') {
+      window.emailjs.init({ publicKey: window.CS_EMAILJS_CONFIG.publicKey });
+    }
+  </script>
+  <script type="module" src="./js/firebase-init.js"></script>
+  <script type="module" src="./js/auth.js"></script>
+  <script type="module" src="./js/careers.js"></script>
+</body>
+</html>
