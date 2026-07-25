@@ -1,5 +1,5 @@
 // Replace with the real values from Firebase console > Project settings > General > Your apps > Web app.
-// These values are not secret — Firebase security is enforced by Firestore rules, not by hiding this config.
+// These values are not secret. Firebase security is enforced by Firestore rules, not by hiding this config.
 window.CS_FIREBASE_CONFIG = {
   apiKey: "AIzaSyCrEdKz6sTUgQUoFso1GOzFQl4ErC6HBPw",
   authDomain: "cedal-d1279.firebaseapp.com",

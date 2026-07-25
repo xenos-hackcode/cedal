@@ -7,7 +7,7 @@ window.CS_I18N = {
 
     hero_eyebrow: "CYBER • ANDROID • WEB",
     hero_title: ["We build apps,", "secure systems,", "and decode problems."],
-    hero_sub: "Cedal Star is a small studio working on Android apps, security tools, and custom websites. We don't have a physical office — we exist online and work from anywhere. If you need something built or locked down, talk to us.",
+    hero_sub: "Cedal Star is a small studio working on Android apps, security tools, and custom websites. We don't have a physical office. We exist online and work from anywhere, and we build web and apps that look and feel as realistic as AI itself. If you need something built or locked down, talk to us.",
     hero_cta_primary: "Contact Cedal Star",
     hero_cta_ghost: "View Apps",
 
@@ -67,7 +67,7 @@ window.CS_I18N = {
     product_voiceos_btn: "More info soon",
 
     product_miv_name: "MIV Church Website",
-    product_miv_body: "A full website built by Cedal Star for a client — Men of Issachar Vision, a church in Edinburgh. Not our own product, but our craft.",
+    product_miv_body: "A full website built by Cedal Star for a client, Men of Issachar Vision, a church in Edinburgh. Not our own product, but our craft.",
     product_miv_tag1: "Client Work",
     product_miv_tag2: "Web",
     product_miv_btn: "Visit site",
@@ -77,7 +77,7 @@ window.CS_I18N = {
     product_empty_btn: "Contact us",
 
     founder_title: "Founder",
-    founder_sub: "Cedal Star was started by Xenos — a developer focused on Android, security, and experimental interfaces.",
+    founder_sub: "Cedal Star was started by Xenos, a developer focused on Android, security, and experimental interfaces.",
     founder_role: "Founder • Android & Security Developer",
     founder_text: "Building custom launchers, AI assistants, and security-focused tools. Leading Cedal Star as a small, remote-first studio with a focus on sharp, efficient builds.",
 
@@ -109,7 +109,7 @@ window.CS_I18N = {
     login_no_account: "Don't have an account?",
     login_signup_link: "Sign up",
     login_error_generic: "Something went wrong. Check your email and password and try again.",
-    login_reset_sent: "Password reset email sent — check your inbox.",
+    login_reset_sent: "Password reset email sent. Check your inbox.",
 
     signup_title: "Create your account",
     signup_sub: "Sign up to apply for open positions at Cedal Star.",
@@ -127,13 +127,13 @@ window.CS_I18N = {
     careers_sub: "We're a small, remote-first team. Here's what we're hiring for right now.",
 
     position_buildtester_name: "Build Tester",
-    position_buildtester_body: "Test the apps Cedal Star builds — find bugs, break things, report clearly.",
+    position_buildtester_body: "Test the apps Cedal Star builds: find bugs, break things, report clearly.",
     position_cybersecurity_name: "Cyber Security Agent",
     position_cybersecurity_body: "Hacking, network forensics, and defense. Think like an attacker, defend like a pro.",
     position_robotics_name: "Robotics Engineer",
     position_robotics_body: "Design, build, and program robotics projects for Cedal Star.",
     position_codingteacher_name: "Coding Teacher",
-    position_codingteacher_body: "Teach coding — help others learn to build software.",
+    position_codingteacher_body: "Teach coding: help others learn to build software.",
     position_securityteacher_name: "Cybersecurity Teacher",
     position_securityteacher_body: "Teach cybersecurity fundamentals and practical defense skills.",
     position_accountant_name: "Accountant",
@@ -141,7 +141,7 @@ window.CS_I18N = {
     position_planner_name: "Planner",
     position_planner_body: "Plan and organize projects and operations across the team.",
     position_outsider_name: "Outsider",
-    position_outsider_body: "Represent Cedal Star externally — find people and clients who need what we build.",
+    position_outsider_body: "Represent Cedal Star externally: find people and clients who need what we build.",
 
     careers_apply_btn: "Apply",
     careers_already_applied_btn: "Applied",
@@ -155,8 +155,10 @@ window.CS_I18N = {
     apply_portfolio_label: "Portfolio / GitHub / LinkedIn (optional)",
     apply_submit_btn: "Submit Application",
     apply_cancel_btn: "Cancel",
-    apply_success_body: "Thanks — we've received your application and will be in touch.",
-    apply_error_generic: "Something went wrong submitting your application. Try again."
+    apply_success_body: "Thanks! We've received your application and will be in touch.",
+    apply_error_generic: "Something went wrong submitting your application. Try again.",
+    apply_resume_label: "Resume / CV link (optional)",
+    apply_resume_placeholder: "Paste a Google Drive, Dropbox, or similar link"
   },
 
   fr: {
@@ -167,7 +169,7 @@ window.CS_I18N = {
 
     hero_eyebrow: "CYBER • ANDROID • WEB",
     hero_title: ["Nous créons des applications,", "sécurisons des systèmes,", "et décodons des problèmes."],
-    hero_sub: "Cedal Star est un petit studio spécialisé dans les applications Android, les outils de sécurité et les sites web sur mesure. Nous n'avons pas de bureau physique — nous existons en ligne et travaillons de partout. Si vous avez besoin de faire construire ou sécuriser quelque chose, parlez-nous.",
+    hero_sub: "Cedal Star est un petit studio spécialisé dans les applications Android, les outils de sécurité et les sites web sur mesure. Nous n'avons pas de bureau physique. Nous existons en ligne et travaillons de partout, et nous créons des sites et applications aussi réalistes que l'IA elle-même. Si vous avez besoin de faire construire ou sécuriser quelque chose, parlez-nous.",
     hero_cta_primary: "Contacter Cedal Star",
     hero_cta_ghost: "Voir les applications",
 
@@ -227,7 +229,7 @@ window.CS_I18N = {
     product_voiceos_btn: "Plus d'infos bientôt",
 
     product_miv_name: "Site web MIV Church",
-    product_miv_body: "Un site web complet construit par Cedal Star pour un client — Men of Issachar Vision, une église à Édimbourg. Pas notre propre produit, mais notre savoir-faire.",
+    product_miv_body: "Un site web complet construit par Cedal Star pour un client, Men of Issachar Vision, une église à Édimbourg. Pas notre propre produit, mais notre savoir-faire.",
     product_miv_tag1: "Travail client",
     product_miv_tag2: "Web",
     product_miv_btn: "Voir le site",
@@ -237,7 +239,7 @@ window.CS_I18N = {
     product_empty_btn: "Nous contacter",
 
     founder_title: "Fondateur",
-    founder_sub: "Cedal Star a été fondé par Xenos — un développeur spécialisé en Android, sécurité et interfaces expérimentales.",
+    founder_sub: "Cedal Star a été fondé par Xenos, un développeur spécialisé en Android, sécurité et interfaces expérimentales.",
     founder_role: "Fondateur • Développeur Android & Sécurité",
     founder_text: "Création de launchers sur mesure, d'assistants IA et d'outils axés sur la sécurité. À la tête de Cedal Star, un studio réduit et 100% à distance, centré sur des réalisations précises et efficaces.",
 
@@ -269,7 +271,7 @@ window.CS_I18N = {
     login_no_account: "Vous n'avez pas de compte ?",
     login_signup_link: "Inscrivez-vous",
     login_error_generic: "Une erreur s'est produite. Vérifiez votre e-mail et votre mot de passe et réessayez.",
-    login_reset_sent: "E-mail de réinitialisation envoyé — vérifiez votre boîte de réception.",
+    login_reset_sent: "E-mail de réinitialisation envoyé. Vérifiez votre boîte de réception.",
 
     signup_title: "Créez votre compte",
     signup_sub: "Inscrivez-vous pour postuler aux postes ouverts chez Cedal Star.",
@@ -287,13 +289,13 @@ window.CS_I18N = {
     careers_sub: "Nous sommes une petite équipe, 100 % à distance. Voici ce que nous recrutons en ce moment.",
 
     position_buildtester_name: "Testeur d'applications",
-    position_buildtester_body: "Testez les applications que Cedal Star construit — trouvez des bugs, cassez des choses, signalez clairement.",
+    position_buildtester_body: "Testez les applications que Cedal Star construit : trouvez des bugs, cassez des choses, signalez clairement.",
     position_cybersecurity_name: "Agent en cybersécurité",
     position_cybersecurity_body: "Piratage, criminalistique réseau et défense. Pensez comme un attaquant, défendez comme un pro.",
     position_robotics_name: "Ingénieur en robotique",
     position_robotics_body: "Concevez, construisez et programmez des projets de robotique pour Cedal Star.",
     position_codingteacher_name: "Professeur de programmation",
-    position_codingteacher_body: "Enseignez la programmation — aidez les autres à apprendre à créer des logiciels.",
+    position_codingteacher_body: "Enseignez la programmation : aidez les autres à apprendre à créer des logiciels.",
     position_securityteacher_name: "Professeur en cybersécurité",
     position_securityteacher_body: "Enseignez les fondamentaux de la cybersécurité et des compétences de défense pratiques.",
     position_accountant_name: "Comptable",
@@ -301,7 +303,7 @@ window.CS_I18N = {
     position_planner_name: "Planificateur",
     position_planner_body: "Planifiez et organisez les projets et les opérations de toute l'équipe.",
     position_outsider_name: "Outsider",
-    position_outsider_body: "Représentez Cedal Star à l'extérieur — trouvez des personnes et des clients qui ont besoin de ce que nous construisons.",
+    position_outsider_body: "Représentez Cedal Star à l'extérieur : trouvez des personnes et des clients qui ont besoin de ce que nous construisons.",
 
     careers_apply_btn: "Postuler",
     careers_already_applied_btn: "Candidature envoyée",
@@ -315,8 +317,10 @@ window.CS_I18N = {
     apply_portfolio_label: "Portfolio / GitHub / LinkedIn (facultatif)",
     apply_submit_btn: "Envoyer la candidature",
     apply_cancel_btn: "Annuler",
-    apply_success_body: "Merci — nous avons bien reçu votre candidature et reviendrons vers vous.",
-    apply_error_generic: "Une erreur s'est produite lors de l'envoi de votre candidature. Réessayez."
+    apply_success_body: "Merci ! Nous avons bien reçu votre candidature et reviendrons vers vous.",
+    apply_error_generic: "Une erreur s'est produite lors de l'envoi de votre candidature. Réessayez.",
+    apply_resume_label: "Lien CV (facultatif)",
+    apply_resume_placeholder: "Collez un lien Google Drive, Dropbox ou similaire"
   },
 
   de: {
@@ -327,7 +331,7 @@ window.CS_I18N = {
 
     hero_eyebrow: "CYBER • ANDROID • WEB",
     hero_title: ["Wir bauen Apps,", "sichern Systeme", "und entschlüsseln Probleme."],
-    hero_sub: "Cedal Star ist ein kleines Studio für Android-Apps, Sicherheitstools und individuelle Websites. Wir haben kein physisches Büro — wir sind online zu Hause und arbeiten von überall. Wenn Sie etwas bauen oder absichern lassen wollen, sprechen Sie mit uns.",
+    hero_sub: "Cedal Star ist ein kleines Studio für Android-Apps, Sicherheitstools und individuelle Websites. Wir haben kein physisches Büro. Wir sind online zu Hause, arbeiten von überall und bauen Websites und Apps, die so real wirken wie KI selbst. Wenn Sie etwas bauen oder absichern lassen wollen, sprechen Sie mit uns.",
     hero_cta_primary: "Cedal Star kontaktieren",
     hero_cta_ghost: "Apps ansehen",
 
@@ -387,7 +391,7 @@ window.CS_I18N = {
     product_voiceos_btn: "Bald mehr Infos",
 
     product_miv_name: "MIV-Kirchenwebsite",
-    product_miv_body: "Eine komplette Website, gebaut von Cedal Star für einen Kunden — Men of Issachar Vision, eine Kirche in Edinburgh. Nicht unser eigenes Produkt, aber unser Handwerk.",
+    product_miv_body: "Eine komplette Website, gebaut von Cedal Star für einen Kunden, Men of Issachar Vision, eine Kirche in Edinburgh. Nicht unser eigenes Produkt, aber unser Handwerk.",
     product_miv_tag1: "Kundenprojekt",
     product_miv_tag2: "Web",
     product_miv_btn: "Website besuchen",
@@ -397,7 +401,7 @@ window.CS_I18N = {
     product_empty_btn: "Kontakt aufnehmen",
 
     founder_title: "Gründer",
-    founder_sub: "Cedal Star wurde von Xenos gegründet — einem Entwickler mit Fokus auf Android, Sicherheit und experimentelle Oberflächen.",
+    founder_sub: "Cedal Star wurde von Xenos gegründet, einem Entwickler mit Fokus auf Android, Sicherheit und experimentelle Oberflächen.",
     founder_role: "Gründer • Android- & Sicherheitsentwickler",
     founder_text: "Baut individuelle Launcher, KI-Assistenten und sicherheitsorientierte Tools. Leitet Cedal Star als kleines, remote-first Studio mit Fokus auf präzise, effiziente Umsetzungen.",
 
@@ -429,7 +433,7 @@ window.CS_I18N = {
     login_no_account: "Noch kein Konto?",
     login_signup_link: "Registrieren",
     login_error_generic: "Etwas ist schiefgelaufen. Überprüfen Sie E-Mail und Passwort und versuchen Sie es erneut.",
-    login_reset_sent: "E-Mail zum Zurücksetzen des Passworts gesendet — prüfen Sie Ihr Postfach.",
+    login_reset_sent: "E-Mail zum Zurücksetzen des Passworts gesendet. Prüfen Sie Ihr Postfach.",
 
     signup_title: "Konto erstellen",
     signup_sub: "Registrieren Sie sich, um sich auf offene Stellen bei Cedal Star zu bewerben.",
@@ -447,13 +451,13 @@ window.CS_I18N = {
     careers_sub: "Wir sind ein kleines, remote-first Team. Das suchen wir gerade.",
 
     position_buildtester_name: "App-Tester",
-    position_buildtester_body: "Testen Sie die Apps, die Cedal Star baut — Bugs finden, Dinge kaputt machen, klar berichten.",
+    position_buildtester_body: "Testen Sie die Apps, die Cedal Star baut: Bugs finden, Dinge kaputt machen, klar berichten.",
     position_cybersecurity_name: "Cyber-Security-Agent",
     position_cybersecurity_body: "Hacking, Netzwerkforensik und Verteidigung. Denken Sie wie ein Angreifer, verteidigen Sie wie ein Profi.",
     position_robotics_name: "Robotik-Ingenieur",
     position_robotics_body: "Entwerfen, bauen und programmieren Sie Robotik-Projekte für Cedal Star.",
     position_codingteacher_name: "Programmierlehrer",
-    position_codingteacher_body: "Programmieren unterrichten — anderen helfen, Software zu entwickeln.",
+    position_codingteacher_body: "Programmieren unterrichten: anderen helfen, Software zu entwickeln.",
     position_securityteacher_name: "Cybersecurity-Lehrer",
     position_securityteacher_body: "Grundlagen der Cybersicherheit und praktische Verteidigungsfähigkeiten unterrichten.",
     position_accountant_name: "Buchhalter",
@@ -461,7 +465,7 @@ window.CS_I18N = {
     position_planner_name: "Planer",
     position_planner_body: "Projekte und Abläufe im gesamten Team planen und organisieren.",
     position_outsider_name: "Outsider",
-    position_outsider_body: "Vertreten Sie Cedal Star nach außen — finden Sie Menschen und Kunden, die brauchen, was wir bauen.",
+    position_outsider_body: "Vertreten Sie Cedal Star nach außen: finden Sie Menschen und Kunden, die brauchen, was wir bauen.",
 
     careers_apply_btn: "Bewerben",
     careers_already_applied_btn: "Beworben",
@@ -475,8 +479,10 @@ window.CS_I18N = {
     apply_portfolio_label: "Portfolio / GitHub / LinkedIn (optional)",
     apply_submit_btn: "Bewerbung senden",
     apply_cancel_btn: "Abbrechen",
-    apply_success_body: "Danke — wir haben Ihre Bewerbung erhalten und melden uns bei Ihnen.",
-    apply_error_generic: "Beim Senden Ihrer Bewerbung ist etwas schiefgelaufen. Versuchen Sie es erneut."
+    apply_success_body: "Danke! Wir haben Ihre Bewerbung erhalten und melden uns bei Ihnen.",
+    apply_error_generic: "Beim Senden Ihrer Bewerbung ist etwas schiefgelaufen. Versuchen Sie es erneut.",
+    apply_resume_label: "Lebenslauf-Link (optional)",
+    apply_resume_placeholder: "Fügen Sie einen Google-Drive-, Dropbox- oder ähnlichen Link ein"
   },
 
   yo: {
@@ -487,7 +493,7 @@ window.CS_I18N = {
 
     hero_eyebrow: "CYBER • ANDROID • WEB",
     hero_title: ["A ń kọ́ àwọn app,", "à ń dáàbò bo àwọn ètò,", "a sì ń yanjú àwọn ìṣòro."],
-    hero_sub: "Cedal Star jẹ́ ilé-iṣẹ́ kékeré tí ń ṣiṣẹ́ lórí àwọn app Android, àwọn irinṣẹ́ ààbò, àti àwọn wẹ́ẹ̀bùsàìtì tí a ṣe àkànṣe. A kò ní ọ́fíìsì gidi — a ń gbé lórí ayélujára, a sì ń ṣiṣẹ́ láti ibi gbogbo. Bí o bá nílò kí a kọ́ nǹkan tàbí kí a dáàbò bò ó, bá wa sọ̀rọ̀.",
+    hero_sub: "Cedal Star jẹ́ ilé-iṣẹ́ kékeré tí ń ṣiṣẹ́ lórí àwọn app Android, àwọn irinṣẹ́ ààbò, àti àwọn wẹ́ẹ̀bùsàìtì tí a ṣe àkànṣe. A kò ní ọ́fíìsì gidi. A ń gbé lórí ayélujára, a sì ń ṣiṣẹ́ láti ibi gbogbo, a sì ń kọ́ wẹ́ẹ̀bù àti app tí ó dà bí ti AI ní ojúlówó. Bí o bá nílò kí a kọ́ nǹkan tàbí kí a dáàbò bò ó, bá wa sọ̀rọ̀.",
     hero_cta_primary: "Kàn Sí Cedal Star",
     hero_cta_ghost: "Wo Àwọn App",
 
@@ -547,7 +553,7 @@ window.CS_I18N = {
     product_voiceos_btn: "Àlàyé sí i láìpẹ́",
 
     product_miv_name: "Wẹ́ẹ̀bùsàìtì Ṣọ́ọ̀ṣì MIV",
-    product_miv_body: "Wẹ́ẹ̀bùsàìtì pípé tí Cedal Star kọ́ fún oníbàárà kan — Men of Issachar Vision, ṣọ́ọ̀ṣì kan ní Edinburgh. Kì í ṣe ọjà tiwa fúnra wa, ṣùgbọ́n iṣẹ́ ọwọ́ wa ni.",
+    product_miv_body: "Wẹ́ẹ̀bùsàìtì pípé tí Cedal Star kọ́ fún oníbàárà kan, Men of Issachar Vision, ṣọ́ọ̀ṣì kan ní Edinburgh. Kì í ṣe ọjà tiwa fúnra wa, ṣùgbọ́n iṣẹ́ ọwọ́ wa ni.",
     product_miv_tag1: "Iṣẹ́ Oníbàárà",
     product_miv_tag2: "Wẹ́ẹ̀bù",
     product_miv_btn: "Ṣe Àbẹ̀wò",
@@ -557,7 +563,7 @@ window.CS_I18N = {
     product_empty_btn: "Kàn Sí Wa",
 
     founder_title: "Olùdásílẹ̀",
-    founder_sub: "Xenos ni ó dá Cedal Star sílẹ̀ — akọ́wé-kóòdù tí ó fojú sí Android, ààbò, àti àwọn ojú-ìwé àdánwò.",
+    founder_sub: "Xenos ni ó dá Cedal Star sílẹ̀, akọ́wé-kóòdù tí ó fojú sí Android, ààbò, àti àwọn ojú-ìwé àdánwò.",
     founder_role: "Olùdásílẹ̀ • Akọ́wé-kóòdù Android & Ààbò",
     founder_text: "Kíkọ́ àwọn launcher àkànṣe, olùrànlọ́wọ́ AI, àti àwọn irinṣẹ́ tí ó fojú sí ààbò. Ó ń darí Cedal Star gẹ́gẹ́ bí ilé-iṣẹ́ kékeré tí ó ṣiṣẹ́ láti ọ̀nà jíjìn, tí ó sì fojú sí iṣẹ́ tí ó mú kánkán, tí ó sì dára.",
 
@@ -589,7 +595,7 @@ window.CS_I18N = {
     login_no_account: "O kò ní àkọọ́lẹ̀?",
     login_signup_link: "Forúkọsílẹ̀",
     login_error_generic: "Ohun kan ṣẹlẹ̀ tí kò tọ́. Ṣàyẹ̀wò ímeèlì àti ọ̀rọ̀ìpamọ́ rẹ kí o sì tún gbìyànjú.",
-    login_reset_sent: "A ti fi ímeèlì àtúntò ọ̀rọ̀ìpamọ́ ránṣẹ́ — ṣàyẹ̀wò àpótí ímeèlì rẹ.",
+    login_reset_sent: "A ti fi ímeèlì àtúntò ọ̀rọ̀ìpamọ́ ránṣẹ́. Ṣàyẹ̀wò àpótí ímeèlì rẹ.",
 
     signup_title: "Ṣẹ̀dá àkọọ́lẹ̀ rẹ",
     signup_sub: "Forúkọsílẹ̀ láti fi ẹ̀bẹ̀ sílẹ̀ fún àwọn ipò iṣẹ́ tí ó ṣí sílẹ̀ ní Cedal Star.",
@@ -607,13 +613,13 @@ window.CS_I18N = {
     careers_sub: "Ẹgbẹ́ kékeré ni wá, tí a sì ń ṣiṣẹ́ láti ọ̀nà jíjìn ní pàtàkì. Èyí ni àwọn ipò tí a ń gbà nísinsìnyí.",
 
     position_buildtester_name: "Olùdánwò App",
-    position_buildtester_body: "Dán àwọn app tí Cedal Star kọ́ wò — wá àwọn àṣìṣe, wó nǹkan lulẹ̀, kí o sì ròyìn kedere.",
+    position_buildtester_body: "Dán àwọn app tí Cedal Star kọ́ wò: wá àwọn àṣìṣe, wó nǹkan lulẹ̀, kí o sì ròyìn kedere.",
     position_cybersecurity_name: "Aṣojú Ààbò Ẹrọ Ayélujára",
     position_cybersecurity_body: "Hacking, ìwádìí nẹ́tíwọ́kì, àti ìdáàbòbò. Ronú bí ẹni tí ń kọlù, dáàbò bò bí akọ́ṣẹ́mọṣẹ́.",
     position_robotics_name: "Onímọ̀-ẹ̀rọ Robotics",
     position_robotics_body: "Ṣe àpẹrẹ, kọ́, kí o sì ṣe èto fún àwọn iṣẹ́ akanṣe robotics fún Cedal Star.",
     position_codingteacher_name: "Olùkọ́ Kóòdù",
-    position_codingteacher_body: "Kọ́ni kóòdù — ràn àwọn ẹlòmíràn lọ́wọ́ láti kọ́ bí a ṣe ń kọ́ software.",
+    position_codingteacher_body: "Kọ́ni kóòdù: ràn àwọn ẹlòmíràn lọ́wọ́ láti kọ́ bí a ṣe ń kọ́ software.",
     position_securityteacher_name: "Olùkọ́ Ààbò Ẹrọ Ayélujára",
     position_securityteacher_body: "Kọ́ni ìpìlẹ̀ ààbò ẹrọ ayélujára àti àwọn ọgbọ́n ìdáàbòbò tí ó wúlò.",
     position_accountant_name: "Akọ́ọ́nì",
@@ -621,7 +627,7 @@ window.CS_I18N = {
     position_planner_name: "Olùgbìmọ̀",
     position_planner_body: "Gbìmọ̀ kí o sì ṣètò àwọn iṣẹ́ akanṣe àti iṣẹ́ ẹgbẹ́ ní gbogbogbò.",
     position_outsider_name: "Outsider",
-    position_outsider_body: "Ṣojú Cedal Star ní òde — wá àwọn ènìyàn àti oníbàárà tí wọ́n nílò ohun tí a ń kọ́.",
+    position_outsider_body: "Ṣojú Cedal Star ní òde: wá àwọn ènìyàn àti oníbàárà tí wọ́n nílò ohun tí a ń kọ́.",
 
     careers_apply_btn: "Fi Ẹ̀bẹ̀ Sílẹ̀",
     careers_already_applied_btn: "Ti Fi Sílẹ̀",
@@ -635,8 +641,10 @@ window.CS_I18N = {
     apply_portfolio_label: "Portfolio / GitHub / LinkedIn (kì í ṣe dandan)",
     apply_submit_btn: "Fi Ẹ̀bẹ̀ Ránṣẹ́",
     apply_cancel_btn: "Fagilé",
-    apply_success_body: "Ẹ ṣé — a ti gba ẹ̀bẹ̀ rẹ, a ó sì kàn sí ọ láìpẹ́.",
-    apply_error_generic: "Ohun kan ṣẹlẹ̀ tí kò tọ́ nígbà tí a ń fi ẹ̀bẹ̀ rẹ ránṣẹ́. Tún gbìyànjú."
+    apply_success_body: "Ẹ ṣé! A ti gba ẹ̀bẹ̀ rẹ, a ó sì kàn sí ọ láìpẹ́.",
+    apply_error_generic: "Ohun kan ṣẹlẹ̀ tí kò tọ́ nígbà tí a ń fi ẹ̀bẹ̀ rẹ ránṣẹ́. Tún gbìyànjú.",
+    apply_resume_label: "Ìjápọ̀ Resume / CV (kì í ṣe dandan)",
+    apply_resume_placeholder: "Fi ìjápọ̀ Google Drive, Dropbox, tàbí èyí tí ó jọra sí i"
   },
 
   zh: {
@@ -647,7 +655,7 @@ window.CS_I18N = {
 
     hero_eyebrow: "网络安全 • 安卓 • 网页",
     hero_title: ["我们开发应用，", "保护系统安全，", "并解决各种难题。"],
-    hero_sub: "Cedal Star 是一家专注于安卓应用、安全工具和定制网站的小型工作室。我们没有实体办公室——我们存在于线上，随时随地办公。如果你需要构建或加固什么，欢迎联系我们。",
+    hero_sub: "Cedal Star 是一家专注于安卓应用、安全工具和定制网站的小型工作室。我们没有实体办公室。我们存在于线上，随时随地办公，打造如 AI 般逼真的网站与应用。如果你需要构建或加固什么，欢迎联系我们。",
     hero_cta_primary: "联系 Cedal Star",
     hero_cta_ghost: "查看应用",
 
@@ -707,7 +715,7 @@ window.CS_I18N = {
     product_voiceos_btn: "更多信息即将推出",
 
     product_miv_name: "MIV 教会网站",
-    product_miv_body: "由 Cedal Star 为客户打造的完整网站——Men of Issachar Vision，一间位于爱丁堡的教会。这不是我们自己的产品，但代表了我们的手艺。",
+    product_miv_body: "由 Cedal Star 为客户打造的完整网站，客户是 Men of Issachar Vision，一间位于爱丁堡的教会。这不是我们自己的产品，但代表了我们的手艺。",
     product_miv_tag1: "客户项目",
     product_miv_tag2: "网页",
     product_miv_btn: "访问网站",
@@ -717,7 +725,7 @@ window.CS_I18N = {
     product_empty_btn: "联系我们",
 
     founder_title: "创始人",
-    founder_sub: "Cedal Star 由 Xenos 创立——一位专注于安卓、安全和实验性界面的开发者。",
+    founder_sub: "Cedal Star 由 Xenos 创立，他是一位专注于安卓、安全和实验性界面的开发者。",
     founder_role: "创始人 • 安卓与安全开发者",
     founder_text: "打造定制启动器、AI 助手和以安全为核心的工具。以远程优先的小型工作室方式领导 Cedal Star，专注于精准高效的开发。",
 
@@ -749,7 +757,7 @@ window.CS_I18N = {
     login_no_account: "还没有账户？",
     login_signup_link: "注册",
     login_error_generic: "出了点问题。请检查您的邮箱和密码后重试。",
-    login_reset_sent: "密码重置邮件已发送——请查看您的收件箱。",
+    login_reset_sent: "密码重置邮件已发送。请查看您的收件箱。",
 
     signup_title: "创建您的账户",
     signup_sub: "注册后即可申请 Cedal Star 的空缺职位。",
@@ -767,13 +775,13 @@ window.CS_I18N = {
     careers_sub: "我们是一个远程优先的小团队。以下是我们目前正在招聘的职位。",
 
     position_buildtester_name: "应用测试员",
-    position_buildtester_body: "测试 Cedal Star 开发的应用——查找漏洞、极限测试、清晰反馈。",
+    position_buildtester_body: "测试 Cedal Star 开发的应用：查找漏洞、极限测试、清晰反馈。",
     position_cybersecurity_name: "网络安全特工",
     position_cybersecurity_body: "黑客攻防、网络取证与防御。像攻击者一样思考，像专业人士一样防御。",
     position_robotics_name: "机器人工程师",
     position_robotics_body: "为 Cedal Star 设计、制作并编程机器人项目。",
     position_codingteacher_name: "编程教师",
-    position_codingteacher_body: "教授编程——帮助他人学习开发软件。",
+    position_codingteacher_body: "教授编程：帮助他人学习开发软件。",
     position_securityteacher_name: "网络安全教师",
     position_securityteacher_body: "讲授网络安全基础知识与实用防御技能。",
     position_accountant_name: "会计",
@@ -781,7 +789,7 @@ window.CS_I18N = {
     position_planner_name: "策划专员",
     position_planner_body: "规划并统筹团队各项项目与运营事务。",
     position_outsider_name: "Outsider",
-    position_outsider_body: "对外代表 Cedal Star——寻找需要我们产品和服务的人与客户。",
+    position_outsider_body: "对外代表 Cedal Star：寻找需要我们产品和服务的人与客户。",
 
     careers_apply_btn: "申请",
     careers_already_applied_btn: "已申请",
@@ -795,8 +803,10 @@ window.CS_I18N = {
     apply_portfolio_label: "作品集 / GitHub / LinkedIn（可选）",
     apply_submit_btn: "提交申请",
     apply_cancel_btn: "取消",
-    apply_success_body: "谢谢——我们已收到您的申请，会尽快与您联系。",
-    apply_error_generic: "提交申请时出了点问题，请重试。"
+    apply_success_body: "谢谢！我们已收到您的申请，会尽快与您联系。",
+    apply_error_generic: "提交申请时出了点问题，请重试。",
+    apply_resume_label: "简历链接（可选）",
+    apply_resume_placeholder: "粘贴 Google Drive、Dropbox 或类似的链接"
   },
 
   ja: {
@@ -807,7 +817,7 @@ window.CS_I18N = {
 
     hero_eyebrow: "サイバー • アンドロイド • ウェブ",
     hero_title: ["アプリを作り、", "システムを守り、", "問題を解き明かす。"],
-    hero_sub: "Cedal Star は、Androidアプリ、セキュリティツール、カスタムウェブサイトを手がける小さなスタジオです。物理的なオフィスは持たず、オンラインで存在し、どこからでも仕事をしています。何かを作りたい、あるいは守りたいときは、ぜひご相談ください。",
+    hero_sub: "Cedal Star は、Androidアプリ、セキュリティツール、カスタムウェブサイトを手がける小さなスタジオです。物理的なオフィスは持たず、オンラインで存在し、どこからでも仕事をしています。AIそのものと同じくらいリアルなウェブサイトやアプリを作り上げます。何かを作りたい、あるいは守りたいときは、ぜひご相談ください。",
     hero_cta_primary: "Cedal Starに問い合わせる",
     hero_cta_ghost: "アプリを見る",
 
@@ -867,7 +877,7 @@ window.CS_I18N = {
     product_voiceos_btn: "詳細は近日公開",
 
     product_miv_name: "MIV教会ウェブサイト",
-    product_miv_body: "Cedal Starがクライアントのために制作したウェブサイト——エディンバラの教会、Men of Issachar Vision。自社製品ではありませんが、私たちの技術を表しています。",
+    product_miv_body: "Cedal Starがクライアントのために制作したウェブサイト。クライアントはエディンバラの教会、Men of Issachar Visionです。自社製品ではありませんが、私たちの技術を表しています。",
     product_miv_tag1: "クライアント案件",
     product_miv_tag2: "ウェブ",
     product_miv_btn: "サイトを見る",
@@ -909,7 +919,7 @@ window.CS_I18N = {
     login_no_account: "アカウントをお持ちでないですか？",
     login_signup_link: "新規登録",
     login_error_generic: "問題が発生しました。メールアドレスとパスワードを確認して再度お試しください。",
-    login_reset_sent: "パスワード再設定メールを送信しました — 受信ボックスをご確認ください。",
+    login_reset_sent: "パスワード再設定メールを送信しました。受信ボックスをご確認ください。",
 
     signup_title: "アカウントを作成",
     signup_sub: "Cedal Starの求人に応募するには新規登録してください。",
@@ -927,13 +937,13 @@ window.CS_I18N = {
     careers_sub: "私たちは小規模でリモート中心のチームです。現在募集しているポジションはこちらです。",
 
     position_buildtester_name: "ビルドテスター",
-    position_buildtester_body: "Cedal Starが開発するアプリをテストします — バグを見つけ、限界まで試し、明確に報告します。",
+    position_buildtester_body: "Cedal Starが開発するアプリをテストします。バグを見つけ、限界まで試し、明確に報告します。",
     position_cybersecurity_name: "サイバーセキュリティエージェント",
     position_cybersecurity_body: "ハッキング、ネットワークフォレンジック、防御。攻撃者のように考え、プロとして防御します。",
     position_robotics_name: "ロボティクスエンジニア",
     position_robotics_body: "Cedal Starのロボティクスプロジェクトを設計・製作・プログラミングします。",
     position_codingteacher_name: "コーディング講師",
-    position_codingteacher_body: "コーディングを教える — ソフトウェア開発の学習をサポートします。",
+    position_codingteacher_body: "コーディングを教える。ソフトウェア開発の学習をサポートします。",
     position_securityteacher_name: "サイバーセキュリティ講師",
     position_securityteacher_body: "サイバーセキュリティの基礎と実践的な防御スキルを教えます。",
     position_accountant_name: "経理担当",
@@ -955,8 +965,10 @@ window.CS_I18N = {
     apply_portfolio_label: "ポートフォリオ / GitHub / LinkedIn（任意）",
     apply_submit_btn: "応募を送信",
     apply_cancel_btn: "キャンセル",
-    apply_success_body: "ありがとうございます — 応募を受け付けました。追ってご連絡します。",
-    apply_error_generic: "応募の送信中に問題が発生しました。もう一度お試しください。"
+    apply_success_body: "ありがとうございます！応募を受け付けました。追ってご連絡します。",
+    apply_error_generic: "応募の送信中に問題が発生しました。もう一度お試しください。",
+    apply_resume_label: "履歴書 / CV リンク（任意）",
+    apply_resume_placeholder: "Google Drive、Dropboxなどのリンクを貼り付けてください"
   },
 
   ko: {
@@ -967,7 +979,7 @@ window.CS_I18N = {
 
     hero_eyebrow: "사이버 • 안드로이드 • 웹",
     hero_title: ["우리는 앱을 만들고,", "시스템을 보호하며,", "문제를 해결합니다."],
-    hero_sub: "Cedal Star는 안드로이드 앱, 보안 도구, 맞춤 웹사이트를 만드는 작은 스튜디오입니다. 물리적인 사무실은 없습니다 — 우리는 온라인에 존재하며 어디서든 일합니다. 무언가를 만들거나 보호해야 한다면 저희에게 연락하세요.",
+    hero_sub: "Cedal Star는 안드로이드 앱, 보안 도구, 맞춤 웹사이트를 만드는 작은 스튜디오입니다. 물리적인 사무실은 없습니다. 우리는 온라인에 존재하며 어디서든 일하고, AI만큼 사실적인 웹사이트와 앱을 만듭니다. 무언가를 만들거나 보호해야 한다면 저희에게 연락하세요.",
     hero_cta_primary: "Cedal Star에 문의하기",
     hero_cta_ghost: "앱 보기",
 
@@ -1027,7 +1039,7 @@ window.CS_I18N = {
     product_voiceos_btn: "자세한 정보 곧 공개",
 
     product_miv_name: "MIV 교회 웹사이트",
-    product_miv_body: "Cedal Star가 고객을 위해 제작한 완성형 웹사이트 — 에든버러에 있는 교회, Men of Issachar Vision. 저희 자체 제품은 아니지만 저희의 기술력을 보여줍니다.",
+    product_miv_body: "Cedal Star가 고객을 위해 제작한 완성형 웹사이트로, 고객은 에든버러에 있는 교회 Men of Issachar Vision입니다. 저희 자체 제품은 아니지만 저희의 기술력을 보여줍니다.",
     product_miv_tag1: "고객 프로젝트",
     product_miv_tag2: "웹",
     product_miv_btn: "사이트 방문",
@@ -1069,7 +1081,7 @@ window.CS_I18N = {
     login_no_account: "계정이 없으신가요?",
     login_signup_link: "회원가입",
     login_error_generic: "문제가 발생했습니다. 이메일과 비밀번호를 확인하고 다시 시도하세요.",
-    login_reset_sent: "비밀번호 재설정 이메일을 보냈습니다 — 받은편지함을 확인하세요.",
+    login_reset_sent: "비밀번호 재설정 이메일을 보냈습니다. 받은편지함을 확인하세요.",
 
     signup_title: "계정 만들기",
     signup_sub: "Cedal Star의 채용 공고에 지원하려면 가입하세요.",
@@ -1087,13 +1099,13 @@ window.CS_I18N = {
     careers_sub: "저희는 원격 근무 중심의 작은 팀입니다. 현재 채용 중인 포지션은 다음과 같습니다.",
 
     position_buildtester_name: "빌드 테스터",
-    position_buildtester_body: "Cedal Star가 만든 앱을 테스트합니다 — 버그를 찾고, 한계까지 시험하고, 명확하게 보고합니다.",
+    position_buildtester_body: "Cedal Star가 만든 앱을 테스트합니다: 버그를 찾고, 한계까지 시험하고, 명확하게 보고합니다.",
     position_cybersecurity_name: "사이버 보안 요원",
     position_cybersecurity_body: "해킹, 네트워크 포렌식, 방어. 공격자처럼 생각하고 전문가처럼 방어합니다.",
     position_robotics_name: "로보틱스 엔지니어",
     position_robotics_body: "Cedal Star의 로보틱스 프로젝트를 설계, 제작, 프로그래밍합니다.",
     position_codingteacher_name: "코딩 강사",
-    position_codingteacher_body: "코딩을 가르칩니다 — 다른 사람들이 소프트웨어 개발을 배우도록 돕습니다.",
+    position_codingteacher_body: "코딩을 가르칩니다: 다른 사람들이 소프트웨어 개발을 배우도록 돕습니다.",
     position_securityteacher_name: "사이버보안 강사",
     position_securityteacher_body: "사이버보안 기초와 실무 방어 기술을 가르칩니다.",
     position_accountant_name: "회계 담당자",
@@ -1115,7 +1127,9 @@ window.CS_I18N = {
     apply_portfolio_label: "포트폴리오 / GitHub / LinkedIn (선택 사항)",
     apply_submit_btn: "지원서 제출",
     apply_cancel_btn: "취소",
-    apply_success_body: "감사합니다 — 지원서를 받았으며 곧 연락드리겠습니다.",
-    apply_error_generic: "지원서 제출 중 문제가 발생했습니다. 다시 시도하세요."
+    apply_success_body: "감사합니다! 지원서를 받았으며 곧 연락드리겠습니다.",
+    apply_error_generic: "지원서 제출 중 문제가 발생했습니다. 다시 시도하세요.",
+    apply_resume_label: "이력서 / CV 링크 (선택 사항)",
+    apply_resume_placeholder: "Google Drive, Dropbox 또는 유사한 링크를 붙여넣으세요"
   }
 };

@@ -155,9 +155,10 @@ function sendNotificationEmail(data) {
     position: data.position,
     experience: data.experience,
     why_fit: data.whyFit,
-    portfolio_link: data.portfolioLink || '(none)'
+    portfolio_link: data.portfolioLink || '(none)',
+    resume_link: data.resumeUrl || '(none)'
   }).catch(function () {
-    // Notification email is best-effort — the application is already saved in Firestore either way.
+    // Notification email is best-effort. The application is already saved in Firestore either way.
   });
 }
 
@@ -203,7 +204,10 @@ function initApplyForm() {
     var experience = document.getElementById('apply-experience').value.trim();
     var whyFit = document.getElementById('apply-whyfit').value.trim();
     var portfolioLink = document.getElementById('apply-portfolio').value.trim();
+    var resumeUrl = document.getElementById('apply-resume').value.trim();
     var submitBtn = form.querySelector('button[type="submit"]');
+
+    hideMessage(message);
     submitBtn.disabled = true;
 
     var data = {
@@ -215,6 +219,7 @@ function initApplyForm() {
       experience: experience,
       whyFit: whyFit,
       portfolioLink: portfolioLink,
+      resumeUrl: resumeUrl,
       submittedAt: serverTimestamp()
     };
 
